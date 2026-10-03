@@ -1,4 +1,5 @@
 import { Heart } from "lucide-react";
+import { wedding } from "../data/wedding";
 export function Welcome() {
   return (
     <section
@@ -15,8 +16,8 @@ export function Welcome() {
           <div className="h-px w-20 bg-gradient-to-l from-transparent to-[#b87a5e]" />
         </div>
         <p className="font-calligraphy text-2xl md:text-3xl leading-relaxed italic text-[#fbe8da] drop-shadow-lg">
-          We are honored to welcome you to the Wedding ceremony of Ishaan &amp;
-          Anaya. As they begin their journey together in faith and love, we
+          We are honored to welcome you to the Wedding ceremony of {wedding.groom.name} &amp;
+          {wedding.bride.name}. As they begin their journey together in faith and love, we
           thank you for being part of this blessed occasion ❤
         </p>
         <HeartDivider />

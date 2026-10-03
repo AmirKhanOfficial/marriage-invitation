@@ -1,3 +1,5 @@
+import { wedding } from "../data/wedding";
+
 export function Closing() {
   return (
     <>
@@ -10,7 +12,7 @@ export function Closing() {
             We can't wait to celebrate with you!
           </p>
           <p className="font-calligraphy text-2xl text-[var(--muted)]">
-            Ishaan &amp; Anaya
+            {wedding.groom.name} &amp; {wedding.bride.name}
           </p>
           <div className="text-[var(--primary)] opacity-30 text-3xl mt-8 rotate-180">
             〰〰〰
@@ -19,15 +21,15 @@ export function Closing() {
       </section>
       <footer className="py-10 px-9 md:px-12 text-center border-t border-[var(--border)] relative">
         <p className="font-calligraphy text-xl text-[var(--primary)]">
-          Ishaan &amp; Anaya
+          {wedding.groom.name} &amp; {wedding.bride.name}
         </p>
         <p className="text-xs text-[var(--muted)] mt-2">
-          Create your own Invitation on{" "}
+          Designed & Developed by{" "}
           <a
             href="/"
             className="font-calligraphy text-base gold-gradient-text font-semibold"
           >
-            Zareqia
+            Amir Khan & ChatGPT
           </a>
         </p>
       </footer>

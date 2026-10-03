@@ -711,7 +711,7 @@ export function InvitationCard() {
               fontWeight="600"
               fontFamily="Georgia, serif"
             >
-              Ishaan
+              {wedding.groom.name}
             </text>
 
             <text
@@ -735,7 +735,7 @@ export function InvitationCard() {
               fontWeight="600"
               fontFamily="Georgia, serif"
             >
-              Anaya
+              {wedding.bride.name}
             </text>
 
             {/* Divider */}
